@@ -11,7 +11,7 @@ public class Exemple : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // 60 i/s
     {
         
     }
