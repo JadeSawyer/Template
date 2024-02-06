@@ -14,17 +14,19 @@ public class Nuages : MonoBehaviour
         _positionX = transform.position.x;
         _positionY = transform.position.y;
         _positionZ = transform.position.z;
-
-        BougeNuage();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        BougeNuage();
     }
 
     void BougeNuage(){
-        transform.position = new Vector3(50, 50, 100);
+    // float _nouvellePositionX = _nouvellePositionX + 1;
+
+    _positionX = _positionX + 0.01f;
+
+    transform.position = new Vector3(_positionX, _positionY, _positionZ);
     }
 }
