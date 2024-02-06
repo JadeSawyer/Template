@@ -7,6 +7,8 @@ public class Nuages : MonoBehaviour
     private float _positionX;
     private float _positionY;
     private float _positionZ;
+    
+    [SerializeField] private float _vitesse = 4;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class Nuages : MonoBehaviour
     void BougeNuage(){
     // float _nouvellePositionX = _nouvellePositionX + 1;
 
-    _positionX = _positionX + (1 * Time.deltaTime);
+    _positionX = _positionX + (_vitesse * Time.deltaTime);
 
     transform.position = new Vector3(_positionX, _positionY, _positionZ);
     }
