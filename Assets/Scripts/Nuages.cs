@@ -25,7 +25,7 @@ public class Nuages : MonoBehaviour
     void BougeNuage(){
     // float _nouvellePositionX = _nouvellePositionX + 1;
 
-    _positionX = _positionX + 0.01f;
+    _positionX = _positionX + (1 * Time.deltaTime);
 
     transform.position = new Vector3(_positionX, _positionY, _positionZ);
     }
