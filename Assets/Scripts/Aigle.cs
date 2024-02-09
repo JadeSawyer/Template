@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Aigle : MonoBehaviour
 {
+    private float _vitesse = 1;
+
     private Rigidbody _rb;
 
 
@@ -20,6 +22,6 @@ public class Aigle : MonoBehaviour
     }
 
     void BougeAigle(){
-        _rb.velocity = Vector3.forward * -1;
+        _rb.velocity = Vector3.back * _vitesse;
     }
 }
