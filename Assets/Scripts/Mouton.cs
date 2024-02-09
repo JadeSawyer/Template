@@ -30,7 +30,7 @@ public class Mouton : MonoBehaviour
         if(other.gameObject.tag == _zoneDanger.gameObject.tag) {
             // Debug.Log(other.gameObject.tag);
             _parachute.SetActive(true);
-            _rbMouton.useGravity = false;
+            // _rbMouton.useGravity = false;
             _rbMouton.drag += 1;
         }
     }
