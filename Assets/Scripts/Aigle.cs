@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Aigle : MonoBehaviour
 {
-    private float _vitesse = 1;
+    private float _vitesse = 1f;
 
     private Rigidbody _rb;
 

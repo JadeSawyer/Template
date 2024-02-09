@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mouton : MonoBehaviour
 {
+    [SerializeField] private GameObject _zoneDanger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +14,11 @@ public class Mouton : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
     {
         
     }
